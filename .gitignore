@@ -73,7 +73,7 @@ ncmpcpp/.ncmpcpp/error.log
 APIs
 
 # https://github.com/DoomHammer/dotfiles/blob/master/.gitignore
-.~lock.*#
+.~lock.*
 
 # Mac stuff
 .DS_Store
