@@ -1,0 +1,73 @@
+# Linux
+.bash_history
+
+# Logs
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+pkg/
+src/
+temp/
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+# Dropbox settings and caches
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+# VIM Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# VIM Session
+Session.vim
+Sessionx.vim
+
+# VIM Temporary
+.netrwhist
+*~
+# VIM Auto-generated tag files
+tags
+# VIM Persistent undo
+[._]*.un~
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# https://github.com/cristianpb/dotfiles/blob/master/.gitignore
+ranger/config/ranger/bookmarks
+ranger/config/ranger/history
+ranger/config/ranger/tagged
+mutt/.mutt/alias
+mutt/.mutt/cache
+mutt/.mutt/mailboxes
+mpd/.mpd/mpd.db
+mpd/.mpd/mpd.pid
+mpd/.mpd/mpdstate
+ncmpcpp/.ncmpcpp/error.log
+APIs
