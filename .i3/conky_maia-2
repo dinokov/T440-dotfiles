@@ -1,0 +1,26 @@
+conky.config = {
+	alignment = 'bottom_right',
+	background = true,
+	color2 = '5D7B86',
+	cpu_avg_samples = 2,
+	default_color = 'white',
+	double_buffer = true,
+	font = 'Bitstream Vera Sans:size=8',
+	draw_shades = false,
+	gap_x = 100,
+	gap_y = 30,
+	minimum_width = 400,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 2.0,
+	use_xft = true,
+}
+conky.text = [[
+${font}${color orange}${voffset 2}${hr 1}
+${color cyan}Network Usage vnStat
+${color0}${font}                           #"-i", "-w" and "-m"
+${color purple}${goto 5}Today ${goto 100}Yesterday ${goto 225}Month ${color green}
+${execi 300 vnstat -i wlan0 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}'} ${goto 110}${execi 300 vnstat -i wlan0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}'} ${goto 220}${goto 225}${execi 300 vnstat -i wlan0 -m | grep "$(date '+%Y-%m')"  | awk '{print $8" "substr ($9, 1, 3)}'}
+${color orange}${voffset 2}${hr 1}
+]]
