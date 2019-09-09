@@ -80,7 +80,7 @@ bindsym $mod+F2 exec firefox
 #bindsym $mod+F3 exec thunar
 # bindsym $mod+F3 exec ranger
 #bindsym $mod+F3 exec spacefm
-#bindsym $mod+F3 exec pcmanfm
+bindsym $mod+F4 exec pcmanfm
 bindsym $mod+F3 exec st vifmrun
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
@@ -274,6 +274,8 @@ for_window [class="Xfburn"] floating enable
 for_window [class="gnome-encfs-manager"] floating enable
 for_window [title="Tartube"] floating enable
 for_window [title="Cheese"] floating enable border normal
+for_window [title="qrab"] floating enable border normal
+
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -335,11 +337,14 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 #exec --no-startup-id manjaro-hello
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
+exec_always --no-startup-id /usr/bin/cmst -m
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-exec --no-startup-id blueman
+#exec_always --no-startup-id blueman
+#exec_always --no-startup-id blueman-applet
+exec_always --no-startup-id blueman-tray
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id start_conky_maia
 # exec_always --no-startup-id sbxkb
