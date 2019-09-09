@@ -398,7 +398,8 @@ bindsym $mod+m bar mode toggle
 # Theme colors
 # class                 border  backgr. text    indic.  child_border
 #client.focused          #808280 #808280 #80FFF9 #FDF6E3
-client.focused          #16A085 #808280 #80FFF9 #FDF6E3
+#client.focused          #16A085 #808280 #80FFF9 #FDF6E3     #make border arround active containers visible in split mode
+client.focused          #16A085 #0f6c2a #80FFF9 #FDF6E3
 client.focused_inactive #434745 #434745 #16A085 #454948
 #client.unfocused        #434745 #434745 #16A085 #454948
 client.unfocused        #222222 #434745 #16A085 #454948
