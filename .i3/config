@@ -42,6 +42,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id rofi -show run
 #bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 500 -opacity "80" -bw 0 -columns 2 -hlfg "#9575cd"
 bindsym $mod+d exec rofi -show run -lines 15 -width 60 -opacity "60"
+#bindsym $mod+d exec rofi -show run -lines 15 -width 20 -opacity "90"
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -78,10 +79,11 @@ bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 #bindsym $mod+F2 exec palemoon
 bindsym $mod+F2 exec firefox
 #bindsym $mod+F3 exec thunar
-# bindsym $mod+F3 exec ranger
+#bindsym $mod+F3 exec ranger
+bindsym $mod+F3 exec terminator -e ranger
 #bindsym $mod+F3 exec spacefm
 bindsym $mod+F4 exec pcmanfm
-bindsym $mod+F3 exec st vifmrun
+#bindsym $mod+F3 exec st vifmrun
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -90,17 +92,19 @@ bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart du
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+#bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+bindsym $mod+Shift+h exec xdg-open /home/damir/vimwiki/vim-cheatsheet.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
 
 # change focus
 bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+k focus down
+bindsym $mod+k focus right
+#bindsym $mod+l focus up
 #bindsym $mod+odiaeresis focus right
-bindsym $mod+comma focus right
+#bindsym $mod+comma focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -251,6 +255,7 @@ for_window [title="File Transfer*"] floating enable
 for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
 for_window [title="i3_help"] floating enable sticky enable border normal
+for_window [title="vim-cheatsheet.pdf"] floating enable sticky enable border normal
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro-hello"] floating enable
@@ -355,7 +360,7 @@ exec --no-startup-id start_conky_maia
 #exec --no-startup-id syncthing-gtk -m
 #exec --no-startup-id /usr/bin/keepassxc
 exec_always --no-startup-id /usr/bin/dropbox
-exec --no-startup-id /usr/bin/syncthing -no-browser
+exec_always --no-startup-id /usr/bin/syncthing -no-browser
 exec --no-startup-id /opt/prey-node-client/bin/prey
 exec --no-startup-id /usr/bin/fluxgui
 #exec_always --no-startup-id /usr/bin/kdeconnect-indicator
