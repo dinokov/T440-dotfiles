@@ -11,5 +11,5 @@
 [yadm]
 	managed = true
 [remote "origin"]
-	url = https://github.com/dinokov/T440-dotfiles
+	url = git@github.com:dinokov/T440-dotfiles
 	fetch = +refs/heads/*:refs/remotes/origin/*
