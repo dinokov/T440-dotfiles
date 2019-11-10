@@ -60,12 +60,10 @@ tags
 !.vscode/extensions.json
 
 # https://github.com/cristianpb/dotfiles/blob/master/.gitignore
+.config/ranger/old/
 ranger/config/ranger/bookmarks
-.config/ranger/old/bookmarks
 ranger/config/ranger/history
-.config/ranger/old/history
 ranger/config/ranger/tagged
-.config/ranger/old/tagged
 mutt/.mutt/alias
 mutt/.mutt/cache
 mutt/.mutt/mailboxes
