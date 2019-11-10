@@ -61,8 +61,11 @@ tags
 
 # https://github.com/cristianpb/dotfiles/blob/master/.gitignore
 ranger/config/ranger/bookmarks
+.config/ranger/old/bookmarks
 ranger/config/ranger/history
+.config/ranger/old/history
 ranger/config/ranger/tagged
+.config/ranger/old/tagged
 mutt/.mutt/alias
 mutt/.mutt/cache
 mutt/.mutt/mailboxes
@@ -71,6 +74,12 @@ mpd/.mpd/mpd.pid
 mpd/.mpd/mpdstate
 ncmpcpp/.ncmpcpp/error.log
 APIs
+
+# ViFM
+.config/vifm/vifminfo
+.config/vifm/vifmimgpdffile
+.config/vifm/vifmimgpdfpage
+
 
 # https://github.com/DoomHammer/dotfiles/blob/master/.gitignore
 .~lock.*
