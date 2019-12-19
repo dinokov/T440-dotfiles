@@ -94,7 +94,10 @@ bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 #bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Shift+h exec xdg-open /home/damir/vimwiki/vim-cheatsheet.pdf
-bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+#bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+bindsym $mod+Ctrl+c --release exec --no-startup-id /home/damir/.screenlayout/only-laptop.sh
+bindsym $mod+Ctrl+x --release exec --no-startup-id /home/damir/.screenlayout/only-VGA-27-LCD-levo.sh
+bindsym $mod+Ctrl+y --release exec --no-startup-id /home/damir/.screenlayout/2xAOC-levo+blank.sh
 
 # focus_follows_mouse no
 
@@ -198,6 +201,7 @@ bindsym $mod+8 workspace $ws8
 #workspace $ws6 output HDMI1
 #workspace $ws7 output HDMI1
 #workspace $ws8 output HDMI1
+
 #ce je priklopljen  DisplayPort->HDMI 
 workspace $ws1 output eDP1
 workspace $ws2 output DP2-2
@@ -207,6 +211,16 @@ workspace $ws5 output DP2-2
 workspace $ws6 output DP2-2
 workspace $ws7 output DP2-2
 workspace $ws8 output DP2-2
+
+#ce je priklopljen  DisplayPort->HDMI + VGA + laptop
+#workspace $ws1 output DP2-3
+#workspace $ws2 output DP2-3
+#workspace $ws3 output DP2-3
+#workspace $ws4 output DP2-3
+#workspace $ws5 output DP2-3
+#workspace $ws6 output DP2-2
+#workspace $ws7 output DP2-2
+#workspace $ws8 output DP2-2
 
 # switch  workspace to monitor
 #bindsym $mod+Ctrl+y workspace $ws2  output eDP1
@@ -362,7 +376,8 @@ exec --no-startup-id start_conky_maia
 exec_always --no-startup-id /usr/bin/dropbox
 exec_always --no-startup-id /usr/bin/syncthing -no-browser
 exec --no-startup-id /opt/prey-node-client/bin/prey
-exec --no-startup-id /usr/bin/fluxgui
+#exec --no-startup-id /usr/bin/fluxgui
+exec --no-startup-id /usr/bin/redshift-gtk
 #exec_always --no-startup-id /usr/bin/kdeconnect-indicator
 exec_always --no-startup-id XDG_CURRENT_DESKTOP=XFCE  /usr/bin/kdeconnect-indicator
 
