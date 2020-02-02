@@ -125,6 +125,9 @@ cnoremap w!! execute 'silent! write !SUDO_ASKPASS=`which ssh-askpass` sudo tee %
 "
 " https://github.com/neoclide/coc.nvim
 "
+" MUST use <C-n> and <C-p> to select autocomplete in VimWiki's .md files , it doesnt work with TAB
+" coc-highlight plugin is disabled because it causes high cpu usage
+"
 " if hidden is not set, TextEdit might fail.
 set hidden
 
