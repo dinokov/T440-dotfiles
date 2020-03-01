@@ -363,8 +363,8 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 #exec --no-startup-id manjaro-hello
-#exec --no-startup-id nm-applet
-exec_always --no-startup-id /usr/bin/cmst -m
+exec_always --no-startup-id nm-applet
+#exec_always --no-startup-id /usr/bin/cmst -m
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
