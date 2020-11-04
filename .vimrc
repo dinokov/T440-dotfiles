@@ -119,7 +119,11 @@ autocmd FileChangedShellPost *
 
 " save file as sudo
 " https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work
-cnoremap w!! execute 'silent! write !SUDO_ASKPASS=`which ssh-askpass` sudo tee % >/dev/null' <bar> edit!
+"cnoremap w!! execute 'silent! write !SUDO_ASKPASS=`which ssh-askpass` sudo tee % >/dev/null' <bar> edit!
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
+
 
 """""""""""""""""""""" COC START """"""""""""""""
 "
