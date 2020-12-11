@@ -367,11 +367,11 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id nm-applet
 #exec_always --no-startup-id /usr/bin/cmst -m
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
+##exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 #exec_always --no-startup-id blueman
 #exec_always --no-startup-id blueman-applet
-exec_always --no-startup-id blueman-tray
+##exec_always --no-startup-id blueman-tray
 #exec_always --no-startup-id /usr/bin/blueberry-tray
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id start_conky_maia
@@ -382,11 +382,12 @@ exec --no-startup-id start_conky_maia
 #exec --no-startup-id /usr/bin/nextcloud
 #exec --no-startup-id syncthing-gtk -m
 #exec --no-startup-id /usr/bin/keepassxc
-exec_always --no-startup-id /usr/bin/dropbox
+##exec_always --no-startup-id /usr/bin/dropbox
 exec_always --no-startup-id /usr/bin/syncthing -no-browser
 exec --no-startup-id /opt/prey-node-client/bin/prey
 #exec --no-startup-id /usr/bin/fluxgui
-exec_always --no-startup-id /usr/bin/redshift-gtk
+#exec_always --no-startup-id /usr/bin/redshift-gtk
+exec --no-startup-id /usr/bin/redshift-gtk
 #exec_always --no-startup-id /usr/bin/kdeconnect-indicator
 exec_always --no-startup-id XDG_CURRENT_DESKTOP=XFCE  /usr/bin/kdeconnect-indicator
 exec --no-startup-id /usr/bin/autotiling

@@ -7,16 +7,16 @@
 
 [[ -f ~/.extend.profile ]] && . ~/.extend.profile
 
-BROWSER=/usr/bin/firefox
-RTV_BROWSER=/usr/bin/firefox
-RTV_EDITOR=/usr/bin/kate
-RTV_URLVIEWER=/usr/bin/xsel
+#BROWSER=/usr/bin/firefox
+#RTV_BROWSER=/usr/bin/firefox
+#RTV_EDITOR=/usr/bin/kate
+#RTV_URLVIEWER=/usr/bin/xsel
 
 # Syncthing
 # https://docs.syncthing.net/users/faq.html
 GOMAXPROCS=2
 
 
-alias wiki = 'nvim ~/vimwiki/index.md'
-
+#alias wiki = 'nvim ~/vimwiki/index.md'
+#alias cal1 = 'calcurse -D .calcurse/personal'
 
